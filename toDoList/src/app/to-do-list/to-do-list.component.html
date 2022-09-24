@@ -1,0 +1,8 @@
+<p>To Do List</p>
+
+<div class="container">
+  <div *ngFor="let task of tasks" class="item">
+    <input type="checkbox" [checked]="task.done" name="" id="">
+    {{task.description}}
+  </div>
+</div>
