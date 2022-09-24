@@ -1,0 +1,23 @@
+{
+  "name": "angular-xpe-todolist",
+  "version": "1.0.0",
+  "description": "Simple list of taks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OsmarBaia/angular-xpe-toDoList.git"
+  },
+  "keywords": [
+    "angulat",
+    "To-Do-List"
+  ],
+  "author": "Osmar Neto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OsmarBaia/angular-xpe-toDoList/issues"
+  },
+  "homepage": "https://github.com/OsmarBaia/angular-xpe-toDoList#readme"
+}
