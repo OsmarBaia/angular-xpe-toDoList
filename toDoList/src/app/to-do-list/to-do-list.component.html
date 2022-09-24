@@ -1,8 +1,19 @@
-<p>To Do List</p>
 
-<div class="container">
-  <div *ngFor="let task of tasks" class="item">
-    <input type="checkbox" [checked]="task.done" name="" id="">
-    {{task.description}}
+<div class="taskList">
+  <div class="taskList__name">
+    <p>My List</p>
+  </div>
+
+  <div class="taskList__newTask">
+    <input id="taskList__newTask__input" #inputDescription type="text" placeholder="Descrição da tarefa"/>
+    <button id="taskList__newTask__button" (click)="addTask(inputDescription.value)">Adicionar</button>
+  </div>
+
+  <div class="taskList__list">
+    <div class="taskList__list__item" *ngFor="let task of tasks; let i = index">
+      <input class="taskList__list__item__checkbox" type="checkbox" [checked]="task.done" />
+      <span class="taskList__list__item__text">{{task.description}}</span>
+      <button class="taskList__list__item__deleteButton" (click)="deleteTask(i)">-</button>
+    </div>
   </div>
 </div>

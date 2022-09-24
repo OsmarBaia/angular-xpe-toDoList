@@ -1,0 +1,43 @@
+.taskList{
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.1em solid black;
+  padding-bottom: 2em;
+}
+.taskList__newTask{
+  margin-bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+#taskList__newTask__input{
+}
+
+
+#taskList__newTask__button{
+  margin-left: 2.5em;
+}
+
+.taskList__list__item{
+  display: grid;
+  grid-template-areas: 'check text button';
+  margin: .5em;
+}
+.taskList__list__item__checkbox{
+  grid-area: check;
+  width: 1em;
+}
+
+.taskList__list__item__text {
+  grid-area: text;
+  width: 15em;
+}
+
+.taskList__list__item__deleteButton{
+  grid-area: button;
+  width: 1em;
+  text-align: center;
+}
