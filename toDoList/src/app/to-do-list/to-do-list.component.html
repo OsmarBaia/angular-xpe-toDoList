@@ -1,7 +1,19 @@
 
 <div class="taskList">
   <div class="taskList__name">
-    <p>My List</p>
+    <p>My Tasks</p>
+  </div>
+
+  <div class="taskList__count" [ngSwitch]="tasks.length">
+    <div class="taskList__count__text" *ngSwitchCase="0">
+      <p>Você <strong>não</strong> possui tarefas</p>
+    </div>
+    <div class="taskList__count__text" *ngSwitchCase="1">
+      <p>Você possui <strong>uma</strong> tarefa</p>
+    </div>
+    <div class="taskList__count__text" *ngSwitchDefault>
+    <p> Você possui: <strong> {{tasks.length}}</strong> tarefas restantes</p>
+    </div>
   </div>
 
   <div class="taskList__newTask">
