@@ -8,13 +8,15 @@ import {ToDoItem} from "./toDoItem";
 })
 export class ToDoListComponent implements OnInit {
 
+  newTask: string = '';
+
   tasks: ToDoItem[] = [
     {description: 'Arrumar Cama', done: false},
     {description: 'Fazer Trabalho Pratico', done: false}
     ];
 
-  addTask(description: string){
-    this.tasks.push({description: description, done: false});
+  addTask(){
+    this.tasks.push({description: this.newTask, done: false});
   }
 
   deleteTask(index: number){
